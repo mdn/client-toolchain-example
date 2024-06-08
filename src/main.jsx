@@ -1,15 +1,10 @@
-import Plotly from "plotly.js-dist-min";
+import React from "react";
+import ReactDOM from "react-dom/client";
+import App from "./App.jsx";
+import "./index.css";
 
-const root = document.getElementById("root");
-Plotly.newPlot(
-  root,
-  [
-    {
-      x: [1, 2, 3, 4, 5],
-      y: [1, 2, 4, 8, 16],
-    },
-  ],
-  {
-    margin: { t: 0 },
-  },
+ReactDOM.createRoot(document.getElementById("root")).render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>,
 );
