@@ -51,9 +51,6 @@ function renderGrid(root, data) {
 }
 
 function Example() {
-  if (isPending) return "Loading...";
-
-  if (error) return `An error has occurred: ${error}`;
   const { isPending, error, data } = useQuery({
     queryKey: ["repoData"],
     queryFn: () =>
@@ -62,6 +59,9 @@ function Example() {
       ).then((res) => res.json()),
   });
 
+  if (isPending) return "Loading...";
+
+  if (error) return `An error has occurred: ${error}`;
 
   return (
     <main className={styles.container}>

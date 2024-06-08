@@ -1,6 +1,7 @@
 import js from "@eslint/js";
 import globals from "globals";
 import reactRecommended from "eslint-plugin-react/configs/recommended.js";
+import reactJSXRuntime from "eslint-plugin-react/configs/jsx-runtime.js";
 import reactHooksPlugin from "eslint-plugin-react-hooks";
 
 export default [
@@ -9,6 +10,7 @@ export default [
     ignores: ["node_modules/", "dist/"],
   },
   {
+    files: ["**/*.{js,jsx}"],
     languageOptions: {
       globals: {
         ...globals.browser,
@@ -21,6 +23,7 @@ export default [
     },
   },
   reactRecommended,
+  reactJSXRuntime,
   {
     plugins: {
       "react-hooks": reactHooksPlugin,
