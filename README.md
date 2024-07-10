@@ -1,27 +1,23 @@
-# Welcome to [TODO: ProjectName]
+# MDN client toolchain example
 
-[TODO: ProjectName] is a [TODO: Type of project] that [TODO: thing it does].
+This client toolchain example is the accompanying source code for the MDN [Understanding client-side web development tools](https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Understanding_client-side_tools/Introducing_complete_toolchain) documentation.
 
-[TODO: Additional paragraph describing your project (optional)]
-
-[TODO: ProjectName] is hosted by [MDN Web Docs](https://github.com/mdn).
+You can view a live deployment of the project at <https://mdn.github.io/client-toolchain-example/>.
 
 ## Getting Started
 
-To get up and running, follow these steps:
+Clone the repository and start a local build:
 
-<!--
+```bash
+git clone https://github.com/mdn/client-toolchain-example.git
+cd client-toolchain-example
+# install dependencies
+npm i
+# start the server
+npm run dev
+```
 
-TODO:
-
-Include enough details to get started using the project here and link to other docs with more detail as needed.
-This should look like:
-
-- quick installation/build instructions
-- a few simple examples of use
-
-More detailed build instructions (e.g., prerequisites and testing hints) should be in the CONTRIBUTING.md file.
--->
+If you are stuck, see the instructions [in the accompanying MDN docs](https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Understanding_client-side_tools/Introducing_complete_toolchain#running_the_transformation).
 
 ## Contributing
 
@@ -30,38 +26,6 @@ To get started contributing, please see our [Contributor Guide](CONTRIBUTING.md)
 
 By participating in and contributing to our projects and discussions, you acknowledge that you have read and agree to our [Code of Conduct](CODE_OF_CONDUCT.md).
 
-## Resources
-
-For more information about [TODO: ProjectName], see the following resources:
-
-<!-- [TODO: Add links to other helpful information (roadmap, docs, website, etc.)] -->
-
-## Communications
-
-If you have any questions, please reach out to us on [TODO: communication channel].
-
-<!--
-
-TODO:
-
-Details (with links) to meetings, mailing lists, Slack, and any other communication channels]
-
-- User Mailing List:
-- Developer Mailing List:
-- Slack Channel:
-- Public Meeting Schedule and Links:
-- Social Media:
-
--->
-
 ## License
 
 This project is licensed under the [LICENSE](LICENSE.md).
-
-<!--
-
-We generally use the Mozilla Public License 2.0 and CCSA 2.5 licenses for our projects, see: https://github.com/mdn/content/blob/main/LICENSE.md.
-
-This template is on based on the [CNCF project template](https://github.com/cncf/project-template) distributed under an [Apache license 2.0](https://github.com/cncf/project-template/blob/main/LICENSE).
-
--->
