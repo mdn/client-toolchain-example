@@ -45,7 +45,7 @@ function renderGrid(root, data) {
     z: zValues,
     y: ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"],
     x: data.map((d) => new Date(d.week * 1000)),
-    type: 'heatmap',
+    type: "heatmap",
   };
   Plotly.newPlot(root, [grid], layout);
 }
@@ -65,7 +65,7 @@ function Example() {
 
   return (
     <main className={styles.container}>
-    <h1 className={styles.title}>MDN Content repo commit activity</h1>
+      <h1 className={styles.title}>MDN Content repo commit activity</h1>
       <div
         ref={(root) => {
           if (!root) return;
