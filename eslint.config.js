@@ -1,8 +1,7 @@
 import js from "@eslint/js";
 import globals from "globals";
-import reactRecommended from "eslint-plugin-react/configs/recommended.js";
-import reactJSXRuntime from "eslint-plugin-react/configs/jsx-runtime.js";
-import reactHooksPlugin from "eslint-plugin-react-hooks";
+import reactPlugin from "eslint-plugin-react";
+import reactHooks from "eslint-plugin-react-hooks";
 
 export default [
   js.configs.recommended,
@@ -22,12 +21,7 @@ export default [
       },
     },
   },
-  reactRecommended,
-  reactJSXRuntime,
-  {
-    plugins: {
-      "react-hooks": reactHooksPlugin,
-    },
-    rules: reactHooksPlugin.configs.recommended.rules,
-  },
+  reactPlugin.configs.flat.recommended,
+  reactPlugin.configs.flat["jsx-runtime"],
+  reactHooks.configs.flat.recommended,
 ];
