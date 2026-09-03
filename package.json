@@ -26,7 +26,7 @@
     "vitest": "^4.1.11"
   },
   "dependencies": {
-    "@tanstack/react-query": "^5.102.2",
+    "@tanstack/react-query": "^5.102.8",
     "plotly.js-dist-min": "^3.7.0",
     "react": "^19.2.8",
     "react-dom": "^19.2.8"
