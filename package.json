@@ -23,7 +23,7 @@
     "globals": "^17.13.0",
     "prettier": "^3.9.10",
     "vite": "^8.3.4",
-    "vitest": "^5.0.4"
+    "vitest": "^5.0.5"
   },
   "dependencies": {
     "@tanstack/react-query": "^5.104.2",
