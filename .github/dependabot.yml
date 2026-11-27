@@ -4,20 +4,8 @@ updates:
     directory: /
     schedule:
       interval: weekly
-    open-pull-requests-limit: 10
-    cooldown:
-      default-days: 3
-    groups:
-      npm-prod:
-        dependency-type: production
-        update-types:
-          - minor
-          - patch
-      npm-dev:
-        dependency-type: development
-        update-types:
-          - minor
-          - patch
+    # Security updates only
+    open-pull-requests-limit: 0
     commit-message:
       prefix: chore
       include: scope
